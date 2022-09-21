@@ -5,6 +5,7 @@ import * as Dialog from "@radix-ui/react-dialog";
 import * as Checkbox from "@radix-ui/react-checkbox";
 import * as Select from "@radix-ui/react-select";
 import * as ToggleGroup from '@radix-ui/react-toggle-group';
+// import * as ToggleGroup from "@radix-ui/react-toggle-group";
 
 import { Check, GameController } from "phosphor-react";
 import { Input } from "./Form/Input";
@@ -38,9 +39,7 @@ export function CreateAdModal() {
     if (!data.name) {
       return alert('Nome inválido');
     }
-    
-    
-    
+
     try {
       await axios.post(`http://localhost:3333/games/${data.game}/ads`, {
         name: data.name,
@@ -51,7 +50,6 @@ export function CreateAdModal() {
         hourEnd: data.hourEnd,
         useVoiceChannel: useVoiceChannel,
       })
-    
       alert('Anúncio criado com sucesso!')
     } catch (err) {
       console.log(err)

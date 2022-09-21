@@ -1,6 +1,6 @@
 {
   "name": "esportsnlw",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
@@ -9,9 +9,22 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@radix-ui/react-checkbox": "^1.0.0",
+    "@radix-ui/react-dialog": "^1.0.0",
+    "@radix-ui/react-popover": "^1.0.0",
+    "@radix-ui/react-scroll-area": "^1.0.0",
+    "@radix-ui/react-select": "^1.0.0",
+    "@radix-ui/react-toggle": "^1.0.0",
+    "@radix-ui/react-toggle-group": "^1.0.0",
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "axios": "^0.27.2",
+    "better-react-carousel": "^1.1.1",
+    "keen-slider": "^6.8.2",
     "phosphor-react": "^1.4.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "styled-components": "^5.3.5",
+    "swiper": "^8.4.2"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
