@@ -33,12 +33,18 @@ export function CreateAdModal() {
     const formData = new FormData(event.target as HTMLFormElement)
     const data = Object.fromEntries(formData)
     
-    
-    if (!data.game)
+    if (!data.game){
+      return alert('Informe um jogo!')
+    }
     
     if (!data.name) {
-      return alert('Nome inválido');
+      return alert('Nome inválido!');
     }
+    
+    if(!data.yearsPlaying){
+      return alert('Joga há quanto tempo inválido!')
+    }
+    
 
     try {
       await axios.post(`http://localhost:3333/games/${data.game}/ads`, {

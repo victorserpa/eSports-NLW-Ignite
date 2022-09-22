@@ -1,6 +1,9 @@
+import * as Dialog from "@radix-ui/react-dialog";
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { Swiper, SwiperProps, SwiperSlide } from "swiper/react";
+import { SwiperProps, SwiperSlide } from "swiper/react";
+import { CreateAdBanner } from "./CreateAdBanner";
+import { CreateAdModal } from "./CreateAdModal";
 
 import Slider from "./Slider/Slider";
 
@@ -68,6 +71,10 @@ export function MoviRow() {
           })}
         </Slider>
       </div>
+      <Dialog.Root>
+        <CreateAdBanner />
+        <CreateAdModal />
+      </Dialog.Root>
     </div>
   );
 }

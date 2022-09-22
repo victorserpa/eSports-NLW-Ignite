@@ -1,13 +1,6 @@
-import { useEffect, useState } from "react";
-import * as Dialog from "@radix-ui/react-dialog";
-import { CreateAdBanner } from "./components/CreateAdBanner";
-import { GameBanner } from "./components/GameBanner";
-
 import "./styles/main.css";
 
 import logoImg from "./assets/logo.svg";
-import { CreateAdModal } from "./components/CreateAdModal";
-import axios from "axios";
 import { MoviRow } from "./components/MoviRow";
 
 interface Game {
@@ -33,11 +26,7 @@ function App() {
         </h1>
       </div>
       <div className="max-w-[1344px] mx-auto flex flex-col items-center my-12">
-      <MoviRow />
-        <Dialog.Root>
-          <CreateAdBanner />
-          <CreateAdModal />
-        </Dialog.Root>
+        <MoviRow />
       </div>
     </>
   );
