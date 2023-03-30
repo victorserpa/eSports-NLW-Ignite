@@ -239,7 +239,7 @@ export function CreateAdModal() {
               </Dialog.Close>
               <button
                 type="submit"
-                className="bg-violet-500 px-5 h-12 rounded-md font-semibold flex items-center gap-3 hover:bg-violet-600"
+                className="bg-violet-500 px-5 h-12 rounded-md font-semibold flex items-center gap-3 hover:bg-violet-600" asChild
               >
                 <GameController size={24} />
                 Encontrar duo

@@ -26,7 +26,9 @@
     "react-native-svg": "12.3.0",
     "expo-clipboard": "~3.1.0",
     "expo-notifications": "~0.16.1",
-    "expo-modules-core": "~0.11.5"
+    "expo-modules-core": "~0.11.5",
+    "expo-auth-session": "~3.7.1",
+    "expo-random": "~12.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
